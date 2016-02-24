@@ -1,0 +1,23 @@
+/* CSS declarations go here */
+
+body {
+	margin:0;
+	padding:0;
+}
+
+.container {
+	margin:0;
+	padding:0;
+}
+
+.center {
+	margin:auto;
+}
+
+.pb20 {
+	padding-bottom:20px;
+}
+
+img {
+	margin:auto;
+}
