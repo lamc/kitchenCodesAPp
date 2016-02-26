@@ -1,4 +1,4 @@
-h1.custom-header { 
+.custom-header { 
 	background-color: #bfefe3;
 	background-image: url('https://s0.wp.com/wp-content/themes/pub/blissful-blog/images/bg_pattern.png');
 	background-repeat: repeat;
@@ -13,4 +13,10 @@ h1.custom-header {
 	text-align:center;
 	margin:0;
 	padding:1em 0;
+}
+
+a, a:link, a:visited{
+	color:#333333;
+	text-decoration:none;
+	font-weight:normal;
 }
