@@ -1,4 +1,6 @@
-h1.custom-header { 
+@dark-grey: #333333;
+
+.custom-header { 
 	background-color: #bfefe3;
 	background-image: url('https://s0.wp.com/wp-content/themes/pub/blissful-blog/images/bg_pattern.png');
 	background-repeat: repeat;
@@ -7,10 +9,24 @@ h1.custom-header {
 
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size:3em;
-	color:#333333;
-	width:100%;
-	height:auto;
+	color: @dark-grey;
 	text-align:center;
+	width:100%;
+	height:10em;
 	margin:0;
-	padding:1em 0;
+	padding:20em 0;
+}
+
+a {
+	&:visited {
+		color: @dark-grey;
+		text-decoration:none;
+		font-weight:normal;
+	}
+
+	&:link {
+		color: @dark-grey;
+		text-decoration:none;
+		font-weight:normal;
+	}
 }
