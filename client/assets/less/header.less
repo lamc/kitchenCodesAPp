@@ -1,23 +1,19 @@
 @dark-grey: #333333;
+@global-font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
-.custom-header { 
-	background-color: #bfefe3;
-	background-image: url('https://s0.wp.com/wp-content/themes/pub/blissful-blog/images/bg_pattern.png');
-	background-repeat: repeat;
-	background-position: top left;
-	background-attachment: scroll;
-
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size:3em;
+body {
+	font-family:@global-font;
 	color: @dark-grey;
-	text-align:center;
-	width:100%;
-	height:10em;
-	margin:0;
-	padding:20em 0;
+}
+
+p {
+	font-size:15px;
+
 }
 
 a {
+	vertical-align: middle;
+
 	&:visited {
 		color: @dark-grey;
 		text-decoration:none;
@@ -27,6 +23,40 @@ a {
 	&:link {
 		color: @dark-grey;
 		text-decoration:none;
-		font-weight:normal;
+		font-weight:700;
 	}
+}
+
+.header-wrapper { 
+	background-color: #bfefe3;
+	background-image: url('https://s0.wp.com/wp-content/themes/pub/blissful-blog/images/bg_pattern.png');
+	background-repeat: repeat;
+	background-position: top left;
+	background-attachment: scroll;
+	vertical-align: middle;
+	width:100%;
+	/*height:50em;*/
+	height:auto;
+	margin:0;
+	/*padding:20em 0;*/
+
+	/*only have fixed header for home page*/
+	position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1001;
+	
+
+}
+
+.custom-header {
+	font-size:5em;
+	font-weight:bold;
+	text-align:center;
+	vertical-align: middle;
+
+	margin:0;
+	padding:0;
+
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
