@@ -1,10 +1,11 @@
 <template name="home">
-	<div class="container center pb20">
+	<div class="container-fluid center p0 pb20">
 		<!--{{> home_intro}}
 		{{> navigation}}-->
 		
 		{{> slideshow}}
-		{{> slideshow}}
+		{{> category_thumbnails}}
+		
 	</div>
 </template>
 
@@ -65,4 +66,44 @@
 	    <span class="sr-only">Next</span>
 	  </a>
 	</div>
+</template>
+
+<template name="category_thumbnails">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			     	<img src="/green_tea2.png" alt="...">
+			     	<div class="caption">
+			        	<h3>Desserts</h3>
+				        
+				        <p><a href="/desserts" class="btn btn-primary" role="More Dessert Recipes">More Dessert Recipes</a></p>
+			    	</div>
+			    </div>
+			</div>
+
+			<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			     	<img src="chicken2.png" alt="...">
+			     	<div class="caption">
+			        	<h3>Thumbnail label</h3>
+				        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+			    	</div>
+			    </div>
+			</div>
+
+			<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			     	<img src="/pao2.png" alt="...">
+			     	<div class="caption">
+			        	<h3>Thumbnail label</h3>
+				        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+			    	</div>
+			    </div>
+			</div>		
+		</div>
+	</div>
+
+	
+	
 </template>

@@ -2,23 +2,65 @@
 
 body {
 	margin:0;
-	padding:150px 0 0 0;
+	padding:135px 0 0 0;
+
+	/*mobile*/
+	@media only screen and (max-width: 320px) {
+		padding:119px 0 0 0;
+	}
 
 }
 
-.container {
+.container-fluid {
 	margin:0;
-	padding:0;
+	padding:0 50px;;
+	width:100%;
+
+	/*desktop*/
+	@media only screen and (min-width: 767px) {
+		
+	}
+
+	/*tablet*/
+	@media only screen and (min-width:720px) and (max-width: 767px) {
+		
+	}
+
+	/*mobile*/
+	@media only screen and (max-width: 720px) {
+		.p0;
+	}
+}
+
+.row {
+	padding:20px 0;
+	margin:0;
 }
 
 .center {
 	margin:auto;
 }
+.p0 {
+	padding:0;
+}
 
+.pt15 {
+	padding-top:15px;
+}
+.pr0 {
+	padding-right:0;
+}
 .pb20 {
 	padding-bottom:20px;
+}
+.pl0 {
+	padding-left:0;
 }
 
 img {
 	margin:auto;
+}
+
+.col-md-4, .col-md-6 {
+	
 }
