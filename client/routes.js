@@ -13,3 +13,7 @@ Router.route('/about', function () {
 Router.route('/desserts', function () {
   this.render('desserts');
 });
+
+Router.route('/posts', function() {
+	this.render('posts');
+})

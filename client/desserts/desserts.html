@@ -1,6 +1,19 @@
 <template name="desserts">
-	<div class="container center">
-		<p>temporary desserts page</p>
-		<img src="/red_velvet_cookies.jpg" alt="Red Velvet Cookies">
+	<div class="container-fluid center">
+		<h3>Dessert Recipes</h3>
+		
+		<div class="container-fluid" >
+		
+			<img src="/chocolate_cookies.png" width="200" height="auto">
+
+			
+						{{#each dessert_recipe}}
+						<h3>{{title}}</h3>
+						<p>{{body}}</p>
+						{{/each}}
+					
+
+			
+		</div>
 	</div>
 </template>
