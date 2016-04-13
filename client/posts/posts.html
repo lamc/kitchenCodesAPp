@@ -1,0 +1,22 @@
+<template name="posts">
+	<div clas="container-fluid">
+
+		<form>
+			
+			Title: <input type="text" name="title">
+
+			Body: <input type="text" name="body">
+
+			<input type="submit" value="Add Post">
+		</form>
+
+
+		{{#each posts}}
+		<p>{{createdAt}}</p>
+		<h3>{{title}}</h3>
+		<p>{{body}}</p>
+		{{/each}}
+		
+	</div>
+	
+</template>

@@ -2,18 +2,12 @@ Router.configure({
   layoutTemplate: 'main'
 });
 
-Router.route('/', function () {
-  this.render('home');
+Router.route('/', {
+	template: 'home'
 });
 
-Router.route('/about', function () {
-  this.render('about');
-});
+Router.route('/about');
 
-Router.route('/desserts', function () {
-  this.render('desserts');
-});
+Router.route('/desserts');
 
-Router.route('/posts', function() {
-	this.render('posts');
-})
+Router.route('/posts');
