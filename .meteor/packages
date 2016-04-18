@@ -21,3 +21,5 @@ less
 insecure
 kadira:flow-router
 kadira:blaze-layout
+momentjs:moment
+edgee:slingshot
