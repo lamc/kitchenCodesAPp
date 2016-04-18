@@ -1,0 +1,8 @@
+{
+  "name": "kitchen-codes-app",
+  "version": "1.0.0",
+  "description": "Kichen Codes App",
+  "scripts": {
+    "start": "meteor --settings settings.json"
+  }
+}
