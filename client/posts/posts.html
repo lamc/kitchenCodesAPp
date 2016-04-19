@@ -1,11 +1,9 @@
 <template name="posts">
 	<div clas="container-fluid">
+		
+		{{> imageUploader}}
 
 		<form id="new-post-form">
-			{{> uploader}}
-
-			
-			
 			Title: <input type="text" name="title">
 
 			Body: <input type="text" name="body">
@@ -14,6 +12,8 @@
 		</form>
 
 		
+
 	</div>
 	
 </template>
+
