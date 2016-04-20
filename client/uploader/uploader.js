@@ -1,4 +1,5 @@
 var uploader = new ReactiveVar();
+
 // var imageDetails = new Mongo.Collection('images'); 
 // var currentUserId = Meteor.userId();
 
@@ -17,8 +18,9 @@ Template.imageUploader.events({
       }
       else {
         console.log("Success!");
-        console.log('uploaded file available here: '+downloadUrl);
+        console.log('uploaded file available here: '+ downloadUrl);
 
+       
         // imageDetails.insert({
         //   imageurl: downloadUrl,
         //   time: timeStamp,
@@ -42,6 +44,11 @@ Template.imageUploader.helpers({
 	    if (upload)
 	    	return Math.round(upload.progress() * 100);
     },
+
+    imageUrl: function(dlURL) {
+      return dlURL;
+    }
+
 
     // url: function () {
 
