@@ -18,7 +18,7 @@ Template.posts.events({
 		    
 		    Meteor.call('addPost', {
 		    	title: event.target.title.value, 
-		    	body: event.target.body.value, 
+		    	body: document.getElementById("body-textarea").value, 
 		    	imageUrl: imageUrl
 		    });
 

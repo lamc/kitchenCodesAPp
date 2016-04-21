@@ -7,11 +7,14 @@
 
 					{{> imageUploader}}
 
-					Title: <input type="text" name="title">
+					<label for="title">Title</label>
+					<input class="input-text" id = "title-input" type="text" name="title" placeholder="Title">
 
-					Body: <input type="text" name="body">
+					<label for="body">Body</label>
+  					<textarea class="form-control" id="body-textarea" rows="3" placeholder="Type your text here."></textarea>
 
-					<input type="submit" value="Add Post">
+					<input class="btn btn-default" type="submit" value="Add Post">
+					<input type="reset" value="Reset" onClick="window.location.reload()">
 				</form>
 
             </div>

@@ -1,4 +1,4 @@
-var uploader = new ReactiveVar();
+// var uploader = new ReactiveVar();
 
 // var imageDetails = new Mongo.Collection('images'); 
 // var currentUserId = Meteor.userId();
@@ -10,7 +10,7 @@ Template.imageUploader.events({
     // var timeStamp = Math.floor(Date.now());                 
 
     upload.send(document.getElementById('uploadFile').files[0], function (error, downloadUrl) {
-      uploader.set();
+      // uploader.set();
 
       if (error) {
         console.error('Error uploading');
@@ -28,22 +28,22 @@ Template.imageUploader.events({
         // });
       }
     });
-    uploader.set(upload);
+    // uploader.set(upload);
     return false;
   }
 });
 
 Template.imageUploader.helpers({
 
-    isUploading: function () {
-        return Boolean(uploader.get());
-    },
+    // isUploading: function () {
+    //     return Boolean(uploader.get());
+    // },
 
-    progress: function () {
-	    var upload = uploader.get();
-	    if (upload)
-	    	return Math.round(upload.progress() * 100);
-    },
+    // progress: function () {
+	   //  var upload = uploader.get();
+	   //  if (upload)
+	   //  	return Math.round(upload.progress() * 100);
+    // },
 
     imageUrl: function(dlURL) {
       return dlURL;
