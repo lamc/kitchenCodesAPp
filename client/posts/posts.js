@@ -31,6 +31,8 @@ Template.posts.events({
 		  }
 		});
 		//	uploader.set(upload);
+		
+		event.target.reset();
 		return false;
 	}
 
