@@ -5,16 +5,31 @@
             <div class="col-lg-12">
                 <form id="new-post-form">
 
-					{{> imageUploader}}
+					<div class="form-group">
+			          <label for="selectFile">Image Uploader</label>
+			          <input type="file" id="uploadFile">
+			          <!-- <p class="help-block">Upload image here.</p> -->
+			        </div>
 
-					<label for="title">Title</label>
-					<input class="input-text" id = "title-input" type="text" name="title" placeholder="Title">
+					<div class="mt10">
+						<label class="mt10" for="category">Category</label>
+						<input class="input-text" id="category-input" type="text" name="category" placeholder="Desserts, Gluten Free, Main Dishes,etc">
+					</div>
 
-					<label for="body">Body</label>
-  					<textarea class="form-control" id="body-textarea" rows="3" placeholder="Type your text here."></textarea>
+					<div class="mt10">
+						<label class="mt10" for="title">Title</label>
+						<input class="input-text" id="title-input" type="text" name="title" placeholder="Title">
+					</div>
 
-					<input class="btn btn-default" type="submit" value="Add Post">
-					<input type="reset" value="Reset" onClick="window.location.reload()">
+					<div class="mt10">
+						<label class="mt10" for="body">Body</label>
+  						<textarea class="form-control" id="body-textarea" rows="3" name="body" placeholder="Type your text here."></textarea>
+  					</div>
+
+					<div class="mt10">
+						<input class="btn btn-default" type="submit" value="Add Post">
+						<input class="btn btn-default" type="reset" value="Reset" onClick="window.location.reload()">
+					</div>
 				</form>
 
             </div>
