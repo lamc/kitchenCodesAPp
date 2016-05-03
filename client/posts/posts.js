@@ -10,7 +10,6 @@ Template.posts.events({
 	    event.preventDefault(); // this prevents built-in form submission
 	    //var uploader = new ReactiveVar();
 		var upload = new Slingshot.Upload("myImageUploads");
-		
 		var category = event.target.category.value;
 		var title = event.target.title.value; 
 		var body = event.target.body.value;
@@ -20,36 +19,30 @@ Template.posts.events({
 		// document.getElementById("body-textarea").value;           
 
 		upload.send(document.getElementById('uploadFile').files[0], function (error, imageUrl) {
-		  //uploader.set();
+			//uploader.set();
 
-		  if (error) {
-		    console.error('Error uploading');
-		    alert (error);
-		  }
-		  else {
-		    alert("Success Uploading Image!");
-		    console.log('uploaded file available here: '+ imageUrl);
-		    
-		    Meteor.call('addPost', {
-		    	category: category,
-		    	title: title,
-		    	body: body,
-		    	imageUrl: imageUrl
-		    });
+			if (error) {
+				console.error('Error uploading');
+				alert (error);
+			}
+			else {
+				alert("Success Uploading Image!");
+				console.log('uploaded file available here: '+ imageUrl);
 
-		    // imageDetails.insert({
-		    //   imageurl: downloadUrl,
-		    //   time: timeStamp,
-		    //   uploadedBy: currentUserId
-		    // });
-		  }
+				Meteor.call('addPost', {
+					category: category,
+					title: title,
+					body: body,
+					imageUrl: imageUrl
+				});
+
+			}
 		});
 		//	uploader.set(upload);
-		
+
 		event.target.reset();
 		return false;
 	}
-
 });
 
 Template.posts.helpers({
