@@ -1,4 +1,4 @@
-Template.desserts.helpers({
+Template.dessert.helpers({
 	posts: function() {
 		return Posts.find(
 			{"category":"desserts"}, 
