@@ -1,5 +1,5 @@
 Template.dessert.helpers({
-	posts: function() {
+	dessert_post: function() {
 		return Posts.find(
 			{"category":"desserts"}, 
 			{sort: {createdAt: -1} }
