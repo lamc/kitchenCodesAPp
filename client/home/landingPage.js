@@ -1,19 +1,24 @@
 Template.landingPage.helpers({
-  gf_post: function() {
+  app_post: function() {
     return Posts.find(
-      {"category":"gluten-free"}
-    );
-  },
-
-  dessert_post: function() {
-    return Posts.find(
-      {"category":"dessert"}
+      {"category":"appetizer"},
+      {sort: {createdAt: -1} }
     );
   },
 
   mainEntree_post: function() {
     return Posts.find(
-      {"category":"main-entree"}
+      {"category":"main-entree"}, 
+      {sort: {createdAt: -1} }
+    );
+  },
+
+  dessert_post: function() {
+    return Posts.find(
+      {"category":"desserts"},
+      {sort: {createdAt: -1} }
     );
   }
 });
+
+

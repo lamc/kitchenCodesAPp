@@ -1,14 +1,14 @@
-<template name="dessert">
+<template name="sideDish">
     <div class="container-fluid">
 
         <div class="row">
             <div class="box">
 
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dessert Recipes</h1>
+                    <h1 class="page-header">Side Dish Recipes</h1>
                 </div>
                 
-                {{#each dessert_post}}
+                {{#each sideDish_post}}
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                     <a class="thumbnail" href="#">
                         <img class="img-responsive" src="{{imageUrl}}" alt="">
@@ -19,7 +19,6 @@
                 </div>
                 {{/each}}
                 
-
             </div>
 
         </div>
